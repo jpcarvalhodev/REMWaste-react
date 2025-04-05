@@ -44,7 +44,7 @@ REMWaste-react is designed to guide users through selecting a skip package by di
 - **Tailwind CSS** – Utility-first CSS framework used for styling.
 - **lucide-react** – Icon library for scalable vector icons.
 - **react-router-dom** – For routing between pages (if needed).
-- **TypeScript** – (Optional) Provides type checking with custom types defined in the project.
+- **TypeScript** – Provides type checking with custom types defined in the project.
 
 ## Setup and Installation
 
