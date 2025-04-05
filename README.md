@@ -8,7 +8,7 @@ REMWaste-react is designed to guide users through selecting a skip package by di
 
 - **Responsive Wizard Navigation:**  
 
-  - Displays multiple steps (e.g., "Postcode", "Waste Type", "Select Skip", "Permit Check", "Choose Date", "Payment") with icons.
+  Displays multiple steps (e.g., "Postcode", "Waste Type", "Select Skip", "Permit Check", "Choose Date", "Payment") with icons.
 
   - **Desktop:** Steps are arranged horizontally with custom separators.
   - **Mobile:** Steps are organized in a grid of 2 columns with horizontal separators between pairs.
@@ -16,7 +16,7 @@ REMWaste-react is designed to guide users through selecting a skip package by di
 
 - **Skip Package Cards:**  
 
-  - Each card shows details such as:
+  Each card shows details such as:
 
   - **Size** (in yards)
   - **Hire Period** (in days)
