@@ -3,7 +3,7 @@ import "./App.css";
 import {
   Navigate,
   Route,
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   useLocation,
 } from "react-router-dom";
@@ -28,7 +28,7 @@ function AppRoutes() {
 
 function App() {
   return (
-    <Router basename="/REMWaste-react">
+    <Router>
       <AppRoutes />
     </Router>
   );
