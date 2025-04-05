@@ -7,14 +7,16 @@ A responsive React application for selecting skip packages for waste management.
 REMWaste-react is designed to guide users through selecting a skip package by displaying a step-by-step wizard at the top and a series of skip package cards below. The main features include:
 
 - **Responsive Wizard Navigation:**  
-  Displays multiple steps (e.g., "Postcode", "Waste Type", "Select Skip", "Permit Check", "Choose Date", "Payment") with icons.
+
+  - Displays multiple steps (e.g., "Postcode", "Waste Type", "Select Skip", "Permit Check", "Choose Date", "Payment") with icons.
 
   - **Desktop:** Steps are arranged horizontally with custom separators.
   - **Mobile:** Steps are organized in a grid of 2 columns with horizontal separators between pairs.
   - Icon colors change based on the step (steps 4 to 6 appear in white on mobile).
 
 - **Skip Package Cards:**  
-  Each card shows details such as:
+
+  - Each card shows details such as:
 
   - **Size** (in yards)
   - **Hire Period** (in days)
