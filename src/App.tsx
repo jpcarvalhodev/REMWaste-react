@@ -28,7 +28,7 @@ function AppRoutes() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/REMWaste-react">
       <AppRoutes />
     </Router>
   );
