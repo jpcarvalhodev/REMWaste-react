@@ -7,6 +7,7 @@ A responsive React application for selecting skip packages for waste management.
 REMWaste-react is designed to guide users through selecting a skip package by displaying a step-by-step wizard at the top and a series of skip package cards below. The main features include:
 
 - **Responsive Wizard Navigation:**  
+  
   Displays multiple steps (e.g., "Postcode", "Waste Type", "Select Skip", "Permit Check", "Choose Date", "Payment") with icons.
 
   - **Desktop:** Steps are arranged horizontally with custom separators.
@@ -14,6 +15,7 @@ REMWaste-react is designed to guide users through selecting a skip package by di
   - Icon colors change based on the step (steps 4 to 6 appear in white on mobile).
 
 - **Skip Package Cards:**  
+  
   Each card shows details such as:
 
   - **Size** (in yards)
@@ -25,12 +27,14 @@ REMWaste-react is designed to guide users through selecting a skip package by di
   - Clicking the "Select" button marks the card as selected, changes its text to "Selected", and updates the button background to a custom blue (`#0037C1` with a lighter hover variant).
 
 - **Selection Summary:**  
+  
   When a skip package is selected, a summary bar appears at the bottom of the screen. This bar shows:
 
   - Selected package details (size and hire period)
   - "Back" and "Continue" buttons for further navigation.
 
 - **Responsive Design:**  
+  
   Tailwind CSS is used throughout the project to implement responsive layouts, using utility classes and custom color values.
 
 ## Technologies Used
@@ -68,32 +72,32 @@ npm run dev
 - **Wizard Navigation:**
 
   **Desktop Layout:**
-  - The navigation is rendered as a horizontal list with each step showing an icon and label. Custom separators are inserted between steps. The component uses Tailwind classes such as:
+  
+  The navigation is rendered as a horizontal list with each step showing an icon and label. Custom separators are inserted between steps. The component uses Tailwind classes such as:
 
-  p-8 mx-auto w-full for the nav container.
-
-  flex items-center justify-center list-none for the list.
-
-  Conditional classes determine icon colors based on the step index.
+  - p-8 mx-auto w-full for the nav container.
+  - flex items-center justify-center list-none for the list.
+  - Conditional classes determine icon colors based on the step index.
 
   **Mobile Layout:**
+  
   - The navigation is restructured into a grid of 2 columns per row, with horizontal separators between pairs.
   - The steps are grouped into pairs using JavaScript, and each item includes a globalIndex property to apply conditional styling (steps 4–6 display white icons).
 
 ## Skip Package Cards
 
-- **Card Details:**
+Card Details:
 
-- **Title:** – "X Yards Skip Package"
-- **Pricing:** – The price per week is calculated if available; if not, "Price on request" is shown.
-- **Details:** – Size (yards), hire period (days), road access, and heavy waste indication.
-- **Action Button:** – Clicking the button triggers an onSelect callback. If the card is selected, the button text changes to "Selected" and its background becomes #0037C1 (with a lighter hover color).
+  - **Title:** – "X Yards Skip Package"
+  - **Pricing:** – The price per week is calculated if available; if not, "Price on request" is shown.
+  - **Details:** – Size (yards), hire period (days), road access, and heavy waste indication.
+  - **Action Button:** – Clicking the button triggers an onSelect callback. If the card is selected, the button text changes to "Selected" and its background becomes #0037C1 (with a lighter hover color).
 
 - **Grid Layout:**
 
-  - The cards are rendered in a responsive grid using Tailwind classes:
+  The cards are rendered in a responsive grid using Tailwind classes:
 
-  grid grid-cols-1 md:grid-cols-3 gap-6 px-4
+  - grid grid-cols-1 md:grid-cols-3 gap-6 px-4
 
 ## Selection Summary
 
